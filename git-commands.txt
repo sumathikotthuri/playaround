@@ -55,6 +55,41 @@ git diff --staged
 To compare the changes between branches and changes between earlier commits 
 git diff HEAD
 
+To see all the earlier commits details. commits details will be listed in chronological order, i.e latest on top, older at bottom. This log will display, date, email id,comment
+git log
+
+To see even more detailed log like files involved in a commit
+git log --stat
+
+To see even more detailed log like what content has changed in a commit, if something is added , its shown in green with a + sign, if something is removed, its shown in red color with - sign
+git log --patch
+
+To see only the comments of all commits, i.e a quick overview
+git log --oneline
+
+To see only comments and file content changes
+git log --patch --oneline
+
+To see all the commits details in a graphical structure with heirachy details, with graph we can use many options like --all --decorate --oneline --patch e.tc
+git log --graph --decorate --patch
+
+To remove a file from git
+git rm my_file.txt
+
+If any files are removed from directory want to stage that deleted change
+git add -u .
+
+If you don't want to physically delete the file but want to stop trcking of the file in the git
+git rm --cached my_file.txt
+
+To move git files from one directory to another
+git mv my_file.txt dir/my_file.txt
+
+If the files are moved externally, to apply that change in git
+git add -A .
+
+
+
 
 
 
