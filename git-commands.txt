@@ -37,6 +37,25 @@ git commit -m "File changed" my_file.txt
 If you dont give the comment and just uses below command, git will open a text file to enter the comments
 git commit
 
+To see what changes you have done to the file before staging. This will show the entire line in red color even if single word has changed in the line
+git diff
+
+To see excatly the words which are changed
+git diff --color-words
+
+To know excactly what changes happened to words like word changed/removed or added
+git diff --word-diff
+
+To know the changes to the files whether they were added/removed/modified
+git diff --stat
+
+To know the changes in the staging area to most recent commit in the history
+git diff --staged
+
+To compare the changes between branches and changes between earlier commits 
+git diff HEAD
+
+
 
 
 
