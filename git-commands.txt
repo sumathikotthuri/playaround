@@ -1,1 +1,9 @@
+Download git from https://git-scm.com/
+To configure user name to your git hub account
+git config --global user.name "Suma"
+To configure email to your git hub account
+git config --global user.email "suma@gmail.com"
+To manage line endings in all types in all types of operating system file
+git config --global core.autocrlf true
+git config --global core.autocrlf input  (Difference between input and true ???)
 
