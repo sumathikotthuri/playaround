@@ -19,4 +19,26 @@ git config --global user.email "suma@gmail.com"
 To manage line endings in all types in all types of operating system file
 git config --global core.autocrlf true
 git config --global core.autocrlf input  (Difference between input and true ???)
-These configurations can be 
+
+To intialize the project , in the project directory
+git init
+Outside the project
+git init my_project
+
+To see are there any changes that are done to files or any new files added
+git status
+
+To keep the files in the staging. Every file that needs a commit has to first go to staging.
+git add my_file.txt
+
+To commit a file. Text in double quotes is the comment given for the commit
+git commit -m "File changed" my_file.txt
+
+If you dont give the comment and just uses below command, git will open a text file to enter the comments
+git commit
+
+
+
+
+
+
