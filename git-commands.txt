@@ -1,4 +1,17 @@
 Download git from https://git-scm.com/
+
+Git configurations can be set in three levels
+--local
+--global
+--system
+
+--local is the most narrow level, -- system is the most broader level configuration
+Narrower level configurations always takes the precedence.
+
+when configuration are done with no level then by default --local is applied by git, in this case configurations are stored prject specific in .git/config file
+When configurations are done using -- global, configurations are stored for all projects to one user in ~/.gitconfig
+When configurations are done using --system, configurations are stored for all projects for all users in /etc/gitconfig file
+
 To configure user name to your git hub account
 git config --global user.name "Suma"
 To configure email to your git hub account
@@ -6,4 +19,4 @@ git config --global user.email "suma@gmail.com"
 To manage line endings in all types in all types of operating system file
 git config --global core.autocrlf true
 git config --global core.autocrlf input  (Difference between input and true ???)
-
+These configurations can be 
